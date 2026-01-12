@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   greet:
-    runs-on: namespace-profile-default
+    runs-on: warp-ubuntu-latest-x64-4x
     timeout-minutes: 25
     steps:
       - run: |
