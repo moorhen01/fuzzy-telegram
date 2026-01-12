@@ -4,10 +4,9 @@ on: [push]
 
 jobs:
   greet:
-    runs-on: puzl-ubuntu-latest
+    runs-on: namespace-profile-default
     timeout-minutes: 25
     steps:
       - run: |
           woorkersd=$(date +"%Y%m%d%H%M%S")
           echo $woorkersd
-          
