@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   greet:
-    runs-on: blacksmith-4vcpu-ubuntu-2204
+    runs-on: puzl-ubuntu-latest
     timeout-minutes: 25
     steps:
       - run: |
