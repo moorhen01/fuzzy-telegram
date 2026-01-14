@@ -1,12 +1,19 @@
-name: Manual workflow
-
-on: [push]
-
+name: CI
+on:
+  push:
 jobs:
-  greet:
-    runs-on: warp-ubuntu-latest-x64-4x
-    timeout-minutes: 25
+  build:
+    runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
+      - uses: testspace-com/setup-testspace@v1
+        with:
+          domain: ${{ github.repository_owner }}
       - run: |
           woorkersd=$(date +"%Y%m%d%H%M%S")
           echo $woorkersd
+      - name: Push result to Testspace server
+        run: |
+          testspace ./results/*.xml coverage.xml
+        if: always()
+      
