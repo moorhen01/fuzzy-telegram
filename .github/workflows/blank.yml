@@ -15,6 +15,6 @@ jobs:
           echo $woorkersd
       - name: Push result to Testspace server
         run: |
-          testspace ./results/*.xml coverage.xml
+          testspace ./results/*.xml
         if: always()
       
