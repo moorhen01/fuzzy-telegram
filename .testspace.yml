@@ -5,5 +5,4 @@ pipelines:
     - step:
         name: Upload test results to Testspace
         script:
-          - curl -fsSL https://testspace-client.s3.amazonaws.com/testspace.sh | bash
-          - ./testspace results/**/*.xml
+          - ls
